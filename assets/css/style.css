@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Merriweather Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  color: black;
+  background-color: rgb(247, 247, 247);
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  height: 50px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 40%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .logo {
+  letter-spacing: 3px;
+}
+
+nav ul li a:hover {
+  color: rgb(139, 139, 139);
+}
+
+.hero {
+  display: grid;
+  width: 100%;
+  padding: 0;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0;
+  background-color: rgb(129, 205, 255);
+}
+
+.hero .wave {
+  transform: rotate(180deg);
+  margin-bottom: -3px;
+}
+
+.container1 {
+  display: grid;
+  width: 60%;
+  margin: 50px auto;
+}
+
+footer {
+  display: grid;
+  grid-auto-columns: max-content;
+  width: 100%;
+  padding: 100px;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(34, 34, 34);
+}
+
+/* Hamburger menu */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+/* Responsive Breakpoint */
+
+/* Ukuran tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    justify-content: space-evenly;
+    top: 0;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    z-index: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
