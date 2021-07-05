@@ -16,7 +16,7 @@ nav {
   background-color: rgb(247, 247, 247);
   justify-content: space-around;
   /* padding: 20px 0; */
-  height: 50px;
+  height: 70px;
   align-items: center;
 }
 
@@ -24,7 +24,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 40%;
+  width: 20%;
 }
 
 nav ul li a {
@@ -64,14 +64,27 @@ nav ul li a:hover {
 }
 
 footer {
-  display: grid;
-  grid-auto-columns: max-content;
   width: 100%;
-  padding: 100px;
-  list-style: none;
-  text-decoration: none;
-  color: white;
+  padding: 5px;
   background-color: rgb(34, 34, 34);
+}
+
+footer li a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+footer li a:hover {
+  color: #eee;
+}
+
+.foot {
+  display: flex;
+  width: 15%;
+  margin-left: 50px;
+  list-style: none;
+  justify-content: start;
 }
 
 /* Hamburger menu */
@@ -159,5 +172,16 @@ footer {
   nav ul.slide {
     opacity: 1;
     transform: translateX(0);
+  }
+
+  .foot {
+    display: flex;
+    width: 15%;
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 90px;
   }
 }
