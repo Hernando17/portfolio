@@ -41,26 +41,23 @@ nav ul li a:hover {
 }
 
 .hero {
-  display: grid;
   width: 100%;
   padding: 0;
   justify-items: center;
-  justify-content: center;
   text-align: center;
   color: white;
   padding: 0;
   background-color: rgb(129, 205, 255);
 }
 
-.hero .wave {
-  transform: rotate(180deg);
-  margin-bottom: -3px;
-}
-
 .container1 {
-  display: grid;
   width: 60%;
   margin: 50px auto;
+}
+
+.wave {
+  display: flex;
+  width: 100%;
 }
 
 footer {
@@ -164,7 +161,7 @@ footer li a:hover {
     align-items: center;
     background-color: rgb(247, 247, 247);
     z-index: 0;
-    transform: translateX(100%);
+    transform: translateX(0);
     transition: all 1s;
     opacity: 0;
   }
@@ -177,11 +174,9 @@ footer li a:hover {
   .foot {
     display: flex;
     width: 15%;
-    margin-left: 50px;
     color: white;
     text-decoration: none;
     list-style: none;
     justify-content: space-between;
-    margin-left: 90px;
   }
 }
