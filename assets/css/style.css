@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-html, body {
+body {
   background-color: rgb(221, 221, 221);
   font-family: "Merriweather Sans", sans-serif;
   overflow-x: hidden;
@@ -40,7 +40,6 @@ nav ul li a:hover {
 }
 
 .hero {
-  justify-items: center;
   text-align: center;
   color: white;
   padding: 0;
@@ -99,7 +98,7 @@ footer li a:hover {
   display: block;
   width: 28px;
   height: 3px;
-  background-color: black;
+  background-color: white;
   border-radius: 3px;
   transition: all 0.5s;
 }
@@ -115,22 +114,29 @@ footer li a:hover {
 
 .menu-toggle input:checked~span:nth-child(2) {
   transform: rotate(45deg) translate(-1px, -1px);
+  background-color: black;
 }
 
 .menu-toggle input:checked~span:nth-child(4) {
   transform: rotate(-45deg) translate(-1px, 0);
+  background-color: black;
 }
 
 .menu-toggle input:checked~span:nth-child(3) {
   transform: scale(0);
+  background-color: black;
 }
 
 /* Responsive Breakpoint */
 
 /* Ukuran tablet */
 @media screen and (max-width: 768px) {
-  nav ul {
+  .hero {
+    background-size: 200vh;
+  }
+  nav ul li a {
     width: 50%;
+    color: black;
   }
 }
 
