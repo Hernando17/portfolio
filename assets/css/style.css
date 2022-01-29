@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-html, body {
+body {
   background-color: rgb(221, 221, 221);
   font-family: "Merriweather Sans", sans-serif;
   overflow-x: hidden;
