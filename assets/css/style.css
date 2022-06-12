@@ -14,6 +14,7 @@ html {
 nav {
   display: flex;
   justify-content: center;
+  position: absolute;
   align-items: center;
   height: 80px;
   width: 100%;
@@ -37,11 +38,11 @@ nav li {
 }
 
 nav li a {
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 nav label {
-  color: rgb(0, 0, 0);
+  color: white;
   font-weight: bold;
   font-size: 36px;
 }
@@ -55,7 +56,7 @@ nav label {
 }
 
 .bar {
-  background-color: rgb(0, 0, 0);
+  background-color: white;
   height: 3px;
   width: 40px;
   border-radius: 10px;
@@ -74,7 +75,7 @@ main {
 #hero {
   display: flex;
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   justify-content: center;
   align-items: center;
   padding: 50px;
@@ -122,13 +123,17 @@ main {
     flex-direction: column;
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: -100%;
+    height: 100vh;
+    top: -100vh;
     text-align: center;
     transition: 1s;
     background-color: #000000;
-    opacity: 80%;
     z-index: 1;
+  }
+
+  nav ul.show {
+    transition: 1s;
+    top: 0;
   }
 
   nav li {
@@ -137,11 +142,6 @@ main {
 
   nav li a {
     color: white;
-  }
-
-  nav ul.show {
-    transition: 1s;
-    top: 0;
   }
 
   nav #bar1 {
