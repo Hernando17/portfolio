@@ -134,6 +134,7 @@ main {
   nav ul.show {
     transition: 1s;
     top: 0;
+    position: fixed;
   }
 
   nav li {
@@ -154,13 +155,15 @@ main {
 
   nav #bar3 {
     transition: 1s;
+    width: 40px;
   }
 
   nav #bar1.show {
-    transform: rotate(45deg) translate(-5px, -7px);
+    transform: rotate(45deg) translate(0px, -10px);
     transition: 1s;
     transform-origin: 0 0;
     background-color: white;
+    position: fixed;
   }
 
   nav #bar2.show {
@@ -169,10 +172,11 @@ main {
   }
 
   nav #bar3.show {
-    transform: rotate(-45deg) translate(-2px, -2px);
+    transform: rotate(-45deg) translate(0px, 5px);
     transition: 1s;
     transform-origin: 0 0;
     background-color: white;
+    position: fixed;
   }
   .hamburger {
     display: block;
