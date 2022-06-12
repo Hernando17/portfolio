@@ -65,14 +65,45 @@ nav label {
 /* Main */
 main {
   display: flex;
-  justify-content: center;
-  margin-top: 70px;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
 }
 
+/* Hero Section */
 #hero {
-  width: 81%;
-  height: 100%;
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  background-image: url("/assets/img/bgdark.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  image-rendering: optimizeQuality;
+}
+
+.hero-content {
+  padding: 30px;
+  color: white;
+}
+
+/* content */
+#content {
+  display: flex;
+  width: 80%;
+  margin-top: 50px;
+  background-color: cornsilk;
+}
+
+.title {
+  width: 100%;
   background-color: aquamarine;
+  text-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -97,6 +128,7 @@ main {
     transition: 1s;
     background-color: #000000;
     opacity: 80%;
+    z-index: 1;
   }
 
   nav li {
@@ -142,10 +174,20 @@ main {
     transform-origin: 0 0;
     background-color: white;
   }
-
   .hamburger {
     display: block;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
+  }
+
+  /* Hero mobil responsive */
+  #hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+  }
+
+  .hero-content {
+    text-align: center;
   }
 }
