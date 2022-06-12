@@ -10,6 +10,20 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Grid */
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  display: table;
+  clear: both;
+}
+
 /* Navbar */
 nav {
   display: flex;
@@ -75,7 +89,7 @@ main {
 #hero {
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -96,14 +110,32 @@ main {
   display: flex;
   width: 80%;
   margin-top: 50px;
-  background-color: cornsilk;
+  flex-direction: column;
 }
 
 .title {
   width: 100%;
-  background-color: aquamarine;
   text-align: center;
   align-items: center;
+  margin-bottom: 40px;
+}
+
+/* About */
+.about {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.about-content p {
+  margin: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -144,6 +176,7 @@ main {
 
   nav #bar2 {
     transition: 1s;
+    width: 40px;
   }
 
   nav #bar3 {
@@ -160,8 +193,9 @@ main {
   }
 
   nav #bar2.show {
-    opacity: 0;
-    transition: 0.2s;
+    width: 0px;
+    transition: 1s;
+    transform: rotate(45deg) translate(0px, -11px);
   }
 
   nav #bar3.show {
@@ -173,11 +207,13 @@ main {
   }
   .hamburger {
     display: block;
+    width: 11%;
+    align-items: center;
     z-index: 2;
     cursor: pointer;
   }
 
-  /* Hero mobil responsive */
+  /* Hero mobile responsive */
   #hero {
     flex-direction: column;
     align-items: center;
@@ -185,6 +221,22 @@ main {
   }
 
   .hero-content {
+    text-align: center;
+  }
+
+  /* About mobile responsive */
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-content p {
+    width: 30%;
     text-align: center;
   }
 }
