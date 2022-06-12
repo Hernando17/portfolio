@@ -75,10 +75,9 @@ main {
 #hero {
   display: flex;
   width: 100%;
-  height: 65vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
-  padding: 50px;
   text-align: center;
   background-image: url("/assets/img/bgdark.jpg");
   background-size: cover;
@@ -109,9 +108,6 @@ main {
 
 @media screen and (max-width: 768px) {
   /* Navbar mobile responsive */
-  nav {
-    justify-content: flex-start;
-  }
 
   nav label {
     position: absolute;
@@ -128,6 +124,7 @@ main {
     text-align: center;
     transition: 1s;
     background-color: #000000;
+    justify-content: space-around;
     z-index: 1;
   }
 
@@ -135,10 +132,6 @@ main {
     transition: 1s;
     top: 0;
     position: fixed;
-  }
-
-  nav li {
-    margin-top: 80px;
   }
 
   nav li a {
@@ -159,7 +152,7 @@ main {
   }
 
   nav #bar1.show {
-    transform: rotate(45deg) translate(0px, -10px);
+    transform: rotate(45deg) translate(0px, -11px);
     transition: 1s;
     transform-origin: 0 0;
     background-color: white;
@@ -188,7 +181,7 @@ main {
   #hero {
     flex-direction: column;
     align-items: center;
-    padding: 100px;
+    height: 100vh;
   }
 
   .hero-content {
