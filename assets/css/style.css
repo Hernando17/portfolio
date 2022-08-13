@@ -7,7 +7,7 @@ html {
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Grid */
@@ -28,11 +28,11 @@ html {
 nav {
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   align-items: center;
   height: 80px;
   width: 100%;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #222831;
 }
 
 nav ul {
@@ -93,11 +93,12 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("/assets/img/bgdark.jpg");
+  background-color: #222831;
+  /* background-image: url("/assets/img/bgdark.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  image-rendering: optimizeQuality;
+  image-rendering: optimizeQuality; */
 }
 
 .hero-content {
@@ -108,9 +109,10 @@ main {
 /* content */
 #content {
   display: flex;
-  width: 80%;
+  width: 100%;
   margin-top: 50px;
   flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -124,18 +126,33 @@ main {
 .about {
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
+  justify-content: space-around;
+  margin-bottom: 200px;
+  width: 80%;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: 20px;
 }
 
 .about-content p {
   margin: 10px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: aqua;
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  width: 100%;
+  background-color: gray;
 }
 
 @media screen and (max-width: 768px) {
@@ -149,7 +166,7 @@ main {
   nav ul {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     top: -100vh;
@@ -158,6 +175,7 @@ main {
     background-color: #000000;
     justify-content: space-around;
     z-index: 1;
+    transition: 1s;
   }
 
   nav ul.show {
@@ -233,6 +251,7 @@ main {
   .about-content {
     align-items: center;
     flex-direction: column;
+    margin-left: 0px;
   }
 
   .about-content p {

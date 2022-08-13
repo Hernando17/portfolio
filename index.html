@@ -1,76 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <nav>
-      <label for="logo">Hernando</label>
-      <div id="hamburger" class="hamburger">
-        <div id="bar1" class="bar"></div>
-        <div id="bar2" class="bar"></div>
-        <div id="bar3" class="bar"></div>
-      </div>
-      <ul id="dropdown">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Experience</a></li>
-      </ul>
-    </nav>
-    <main id="main">
-      <section id="hero">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hernando | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body>
+  <nav>
+    <label for="logo">Hernando</label>
+    <div id="hamburger" class="hamburger">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <ul id="dropdown">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Experience</a></li>
+    </ul>
+  </nav>
+  <main id="main">
+    <section id="hero">
+      <div class="tags" style="color:white; position: absolute;"></div>
+      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
         <div class="hero-content">
+          <img src="/assets/img/foto2.jpg" alt="foto" width="200px" height="200px"
+            style="border-radius: 100%; margin-bottom: 30px;" />
           <h1>Welcome to Hernando portfolio website</h1>
           <br />
-          <p>
-            <q
-              >Hello my name is Hernando, i'm a junior programmer and graphic
-              designer</q
-            >
-          </p>
-        </div>
-      </section>
-      <section id="content">
-        <h1 class="title">About Me</h1>
-        <div class="about">
-          <img
-            src="/assets/img/foto2.jpg"
-            alt="foto"
-            width="200px"
-            height="240px"
-          />
-          <div class="about-content">
-            <p>Nama : Hernando</p>
-            <p>Gender : Male</p>
-            <p>Date Of Birth : August 25, 2004</p>
-            <p>Nationality : Indonesia</p>
-            <p>Language : Indonesia & English</p>
+          <!-- <p>
+            <q>Hello my name is Hernando, i'm a junior programmer and graphic
+              designer</q>
+          </p> -->
+          <div id="typed-strings">
+            <p><q> Hello my name is Hernando, i'm a junior programmer and graphic designer </q></p>
           </div>
-          <div class="about-content">
-            <p>Nama : Hernando</p>
-            <p>Gender : Male</p>
-            <p>Date Of Birth : August 25, 2004</p>
-            <p>Nationality : Indonesia</p>
-            <p>Language : Indonesia & English</p>
+          <span id="typed"></span>
+
+        </div>
+      </div>
+    </section>
+    <section id="content">
+      <h1 class="title">About Me</h1>
+      <div id="about" class="about">
+        <!-- <div data-aos="fade-right" data-aos-once='true' data-aos-duration="1000">
+          <img src="/assets/img/foto2.jpg" alt="foto" width="200px" height="240px" />
+        </div> -->
+        <div data-aos="fade-right" data-aos-once='true' data-aos-duration="1000">
+          <div class="about-content" style="text-align:center">
+            <p>Name <br> Hernando</p>
+            <p>Date Of Birth <br> August 25, 2004</p>
+            <p>Place of Birth <br> Riau Island, Indonesia</p>
           </div>
         </div>
-        <!-- <h1 class="title">Contact</h1> -->
-      </section>
-    </main>
-  </body>
-  <script src="/assets/js/jquery-3.6.0.min.js"></script>
-  <script src="/assets/js/script.js"></script>
+        <div data-aos="fade-up" data-aos-once='true' data-aos-duration="1000">
+          <div class="about-content" style="text-align:center">
+            <p>Religion <br> Buddhist</p>
+            <p>Nationality <br> Indonesia</p>
+            <p>Language <br> Indonesia & English</p>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-once='true' data-aos-duration="1000">
+          <div class="about-content" style="text-align:center">
+            <p>Religion <br> Buddhist</p>
+            <p>Status <br> Single</p>
+            <p>Major<br> Information System</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis at
+        dolores, magnam commodi expedita iusto libero totam nihil deserunt
+        eligendi! Fuga molestiae pariatur odit, eveniet iste eius porro
+        voluptatum nemo!
+      </div>
+    </section>
+  </main>
+</body>
+<script src="/assets/js/jquery-3.6.0.min.js"></script>
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js//aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  $(document).ready(function () {
+    $("#about").click(function () {
+      $(document).scrollTop($(document).height());
+    });
+  });
+</script>
+<script type="text/javascript" src="/assets/js/TagCloud.min.js"></script>
+<script>
+  var texts = [
+    '3D', 'TagCloud', 'JavaScript',
+    'CSS3', 'Animation', 'Interactive',
+    'Mouse', 'Rolling', 'Sphere',
+    '6KB', 'v2.x',
+  ];
+  var tc = TagCloud('.tags', texts);
+</script>
+<script src="/assets//js/typed.js"></script>
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 40
+  });
+</script>
+
 </html>
