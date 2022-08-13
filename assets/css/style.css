@@ -112,6 +112,7 @@ main {
 }
 
 .profile-image {
+  margin-top: 3%;
   width: 200px;
   height: 200px;
 }
@@ -235,7 +236,8 @@ main {
   }
   .hamburger {
     display: block;
-    width: 11%;
+    width: 15%;
+    margin-top: 4px;
     align-items: center;
     z-index: 2;
     cursor: pointer;
@@ -249,9 +251,10 @@ main {
   }
 
   .hero-content {
+    position: unset;
     text-align: center;
     width: 83%;
-    margin-top: -38%;
+    height: 15vh;
   }
 
   .profile-image {
