@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0maximum-scale=1.0, user-scalable=no" />
   <title>Hernando | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/particle.css">
 </head>
 
 <body>
@@ -34,24 +35,27 @@
   </nav>
   <main id="main">
     <section id="hero">
-      <div class="tags" style="color:white; position: absolute;"></div>
-      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-        <div class="hero-content">
-          <img src="/assets/img/foto2.jpg" alt="foto" width="200px" height="200px"
-            style="border-radius: 100%; margin-bottom: 30px;" />
-          <h1>Welcome to Hernando portfolio website</h1>
-          <br />
-          <!-- <p>
-            <q>Hello my name is Hernando, i'm a junior programmer and graphic
-              designer</q>
-          </p> -->
-          <div id="typed-strings">
-            <p><q> Hello my name is Hernando, i'm a junior programmer and graphic designer </q></p>
-          </div>
-          <span id="typed"></span>
+      <div id="particles-js" style="width:100%;">
+        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+          <div class="hero-content">
+            <img src="/assets/img/foto2.jpg" alt="foto" width="200px" height="200px"
+              style="border-radius: 100%; margin-bottom: 30px;" />
+            <h1>Welcome to Hernando portfolio website</h1>
+            <!-- <div class="tags" style="color:white; position: absolute;"></div> -->
+            <br />
+            <!-- <p>
+                    <q>Hello my name is Hernando, i'm a junior programmer and graphic
+                      designer</q>
+                  </p> -->
+            <div id="typed-strings">
+              <p><q> Hello my name is Hernando, i'm a junior programmer and graphic designer </q></p>
+            </div>
+            <span id="typed"></span>
 
+          </div>
         </div>
       </div>
+
     </section>
     <section id="content">
       <h1 class="title">About Me</h1>
@@ -75,7 +79,7 @@
         </div>
         <div data-aos="fade-left" data-aos-once='true' data-aos-duration="1000">
           <div class="about-content" style="text-align:center">
-            <p>Religion <br> Buddhist</p>
+            <p>Hobby <br> Gaming</p>
             <p>Status <br> Single</p>
             <p>Major<br> Information System</p>
           </div>
@@ -113,12 +117,16 @@
   ];
   var tc = TagCloud('.tags', texts);
 </script>
-<script src="/assets//js/typed.js"></script>
+<script src="/assets/js/typed.js"></script>
 <script>
   var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
     typeSpeed: 40
   });
+</script>
+<script src="/assets/lib/particles.js-master/particles.js">
+</script>
+<script src="/assets/lib//particles.js-master/demo/js/app.js">
 </script>
 
 </html>

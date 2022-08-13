@@ -32,7 +32,7 @@ nav {
   align-items: center;
   height: 80px;
   width: 100%;
-  background-color: #222831;
+  background-color: transparent;
 }
 
 nav ul {
@@ -102,8 +102,11 @@ main {
 }
 
 .hero-content {
+  position: absolute;
   padding: 30px;
   color: white;
+  align-self: center;
+  /* background-color: aqua; */
 }
 
 /* content */
@@ -239,6 +242,7 @@ main {
   }
 
   .hero-content {
+    margin-top: -40%;
     text-align: center;
   }
 
@@ -251,7 +255,6 @@ main {
   .about-content {
     align-items: center;
     flex-direction: column;
-    margin-left: 0px;
   }
 
   .about-content p {
