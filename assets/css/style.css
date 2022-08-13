@@ -192,7 +192,9 @@ main {
   nav ul.show {
     transition: 1s;
     top: 0;
+    z-index: 1;
     position: fixed;
+    overflow-x: hidden;
   }
 
   nav li a {
