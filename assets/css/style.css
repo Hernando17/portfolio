@@ -105,8 +105,15 @@ main {
   position: absolute;
   padding: 30px;
   color: white;
-  align-self: center;
+  justify-items: center;
+  width: 100%;
+  padding-top: 10%;
   /* background-color: aqua; */
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
 }
 
 /* content */
@@ -242,8 +249,14 @@ main {
   }
 
   .hero-content {
-    margin-top: -40%;
     text-align: center;
+    width: 83%;
+    margin-top: -38%;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
   }
 
   /* About mobile responsive */
