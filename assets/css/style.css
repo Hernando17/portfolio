@@ -124,6 +124,7 @@ main {
   margin-top: 50px;
   flex-direction: column;
   align-items: center;
+  z-index: 0;
 }
 
 .title {
